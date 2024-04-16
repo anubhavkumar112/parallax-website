@@ -1,0 +1,150 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    unicode-bidi: isolate;
+  }
+  
+  .container {
+    position: absolute;
+    width: 100vw;
+  }
+  
+  .hero {
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section {
+    height: 60vh;
+    min-width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+  }
+  
+  p {
+    padding: 0px 80px;
+  }
+  
+  .img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+  }
+  
+  .image1, .image2, .image3 {
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+  }
+  
+  .image1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(./img/hero.png);
+  }
+  
+  .image2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("./img/image2.png");
+  }
+  
+  .image3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(./img//image3.png);
+  }
+  
+  .dark {
+    background-color: #282e34;
+    color: #ddd;
+  }
+  
+  .light {
+    background-color: azure;
+    color: black;
+  }
+  
+  h1 {
+    background-color: #313534;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 20px; /* Smaller font size */
+      padding: 10px; /* Less padding */
+      letter-spacing: 2px; /* Less spacing */
+    }
+  
+    p {
+      padding: 0 20px; /* Less padding */
+    }
+  
+    .section, .hero {
+      height: 50vh; /* Smaller sections */
+    }
+      
+  .section {
+ 
+    flex-direction: row;
+
+  }
+  h1{
+    font-size: 18px;
+  }
+  
+    .img {
+      height: 50vh;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 1024px) {
+    h1 {
+      font-size: 20px; 
+      padding: 12px; 
+      letter-spacing: 5px; 
+    }
+    
+  
+    p {
+      padding: 0 20px; /* Medium padding */
+      font-size: 15px;
+    }
+  
+    .section, .hero {
+      height: 55vh; /* Medium section height */
+    }
+  
+    .img {
+      height: 55vh;
+    }
+  }
+  
